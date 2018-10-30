@@ -12,8 +12,7 @@ vector<vector<int> > simplify(vector<vector<int>> formule, int value) {
 				actual_clause--;
 				break;
 			} else if (formule[actual_clause][actual_literal] == neg_value) {
-				formule[actual_clause].erase(
-						formule[actual_clause].begin() + actual_literal);
+				formule[actual_clause].erase(formule[actual_clause].begin() + actual_literal);
 				actual_literal--;
 			}
 			actual_literal++;
