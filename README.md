@@ -1,2 +1,2 @@
 # SAT_Solver
-group project
+First year of software engineering Mastery group project
