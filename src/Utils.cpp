@@ -20,16 +20,16 @@ bool test_empty_clause(const vector<vector<int>>& formula) {
 
 
 pair<vector<vector<int>>,int> fileToVect(string nameFile){
-	cout << "Entre dans fileToVect";
+	cout << "Entre dans fileToVect" << endl;
 	ifstream infile(nameFile);
 	bool nextClause = true;
 	if(!infile.is_open()){
 		cout << "Impossible d'ouvrir le fichier";
 		return {};
 	}else{
-		cout << "Entre dans le else";
+		cout << "Entre dans le else" << endl;
 		int nombreVariable, nbClauses;
-		vector<vector<int>> formule = vector<vector<int>>();
+		vector<vector<int>> formule;
 		bool com_it = false;
 		while(!com_it){
 			string buff;
@@ -42,17 +42,19 @@ pair<vector<vector<int>>,int> fileToVect(string nameFile){
 				copy( istream_iterator<string>(streamLine), istream_iterator<string>(), back_inserter(lineList ));
 				nombreVariable = stoi(lineList[2]);
 				nbClauses = stoi(lineList[3]);
-				cout << "nb var :" << nombreVariable << endl;
-				cout << "nb clause" << nbClauses;
+				cout << "nb var : " << nombreVariable << endl;
+				cout << "nb clause : " << nbClauses << endl;
 				com_it=true;
 			}
 		}
-		for(int clause = 0 ; clause < nbClauses-1; clause++){
+		for(int clause = 0 ; clause < nbClauses; clause++){
  			string buff;
 			getline(infile, buff);
 			cout << buff;
 			formule.push_back(split(buff));
 		}
+		cout << "Clause 0 : " <<formule[0][0] << " " << formule[0][1] << " " << endl;
+		cout << "Clause 1 : " << formule[1][0] << " " << formule[1][1] << " " << formule[1][1] << endl;
 		return make_pair(formule, nombreVariable);
 	}
 
@@ -66,10 +68,9 @@ vector<int> split(string &line){
 	vector<string> lineList;
 	istringstream streamLine(line);
 	copy( istream_iterator<string>(streamLine), istream_iterator<string>(), back_inserter(lineList ));
-	vector<int> clause = vector<int>();
+	vector<int> clause = vector<int>(lineList.size());
 	for(int value = 0 ; value < lineList.size()-1; value++){
 		clause[value]= stoi(lineList[value]);
-		cout << clause[value] <<" ";
 	}
 	cout<<endl;
 	return clause;
