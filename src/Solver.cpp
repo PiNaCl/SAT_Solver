@@ -25,17 +25,17 @@ Solver::~Solver() {
 
 /*
  * simplify : Fonction permettant la simplification d'une formule, par la valeur d'une des variables.
- * <param> vector <vector<int> formule : formule à simplifier
+ * <param> vector <vector<int> formule : formule ï¿½ simplifier
  * <param> int value : valeur de la variable actuelle.
- * <returns> : la formule simplifiée
+ * <returns> : la formule simplifiï¿½e
  */
 vector<vector<int>> Solver::simplify(vector<vector<int>> formule, int value) {
 	const int neg_value = -value;
-	auto clause_it = formule.begin();
+	vector<vector<int>>::iterator clause_it = formule.begin();
 	while (clause_it != formule.end()) {
-		auto lit_it = clause_it->begin();
+		vector<int>::iterator lit_it = clause_it->begin();
 		while (lit_it != clause_it->end()) {
-			if (*lit_it == value) {
+			if (value == *lit_it) {
 				clause_it = formule.erase(clause_it);
 				break;
 			} else if (*lit_it == neg_value) {
@@ -44,6 +44,8 @@ vector<vector<int>> Solver::simplify(vector<vector<int>> formule, int value) {
 			}else{
 				++clause_it;
 				++lit_it;
+				if (clause_it == formule.end())
+					break;
 			}
 		}
 	}

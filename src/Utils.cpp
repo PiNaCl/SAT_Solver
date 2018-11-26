@@ -16,9 +16,6 @@ bool test_empty_clause(const vector<vector<int>>& formula) {
 	return false;
 }
 
-
-
-
 pair<vector<vector<int>>,int> fileToVect(string nameFile){
 	cout << "Entre dans fileToVect" << endl;
 	ifstream infile(nameFile);
