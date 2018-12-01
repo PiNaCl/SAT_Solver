@@ -8,51 +8,39 @@
 #include "Utils.h"
 
 int main(int argc, char** argv) {
+
+	for (int i =0; i < argc; i++) {
+		cout << argv[i] <<endl;
+	}
 	cout << "Entree";
-	string path="example.cnf";
-	if(argc != 0)
-		path=argv[1];
-	cout << "fichier : " << path;
-	pair<vector<vector<int>>, int> couple = fileToVect(path);
+	string path;
+	if(argc >= 2) {
+		cout << argv[0]; 
+		path = argv[1];
+		cout << &path;
+		cout << "fichier : " << path;
+	}
+	try  {
+		pair<vector<vector<int>>, int> couple = fileToVect(path);
+	
 	vector<vector<int>> phi = couple.first;
 	int nb_var = couple.second;
-	Solver test = Solver(phi, nb_var);
-	//vector<int>solution = test.backtracking(phi, nb_var);
-	//vector<vector<int>> test_value = vector<vector<int>>();
-	vector<vector<int>> solution = test.simplify(phi, nb_var);
+	Solver solver = Solver(phi, nb_var);
+	solver.solve();
+	vector<int> solution = solver.getModel();
 	if (solution.empty()) {
 		cout << "INSATISFAISABLE" << endl;
 	} else {
-		cout << "SATISFIABLE" << endl;
+		cout << "SATISFIABLE" << endl << "solution size = " << solution.size();
 		for (int i=0; i<solution.size(); i++){
-			for(int j = 0; j < solution[i].size(); i++) {
-			if (solution[i][j]!=0)
-				cout << solution[i][j] << " ";
+			if(solution[i]!=0)
+				cout << (i+1) * solution[i] << " ";
 			else
-				cout << -i << "U "; //Temporary, U for undefined as it have not been tested for this model
-			}
+				cout << -1 * (i+1) << " " ;
 		}
 	}
+} catch (exception &e) {
+	cerr << e.what();
 }
-/*	pair<vector<vector<int>>,int> couple = fileToVect("utils/example2.cnf");
-		vector<vector<int>> phi = couple.first;
-		int nb_var = couple.second;
-		Solver test = Solver(phi, nb_var);
-		test.backtracking()
-		afficheFormule(phi);
-		afficheFormule(phi_prime);
-		vector<int> model = vector<int>(nb_var+1,0);
-		bool sat = backtracking(phi,model);
-		if (sat){
-			cout << "SATISFIABLE" << endl;
-			for (int i=1; i<model.size(); i++){
-				if (model[i]!=0)
-					cout << i*model[i] << " ";
-				else
-					cout << -i << "U "; //Temporary, U for undefined as it have not been tested for this model
-			}
-		} else {
-			cout << "INSATISFAISABLE" << endl;
-		}
-		//TODO fonction select_var
-	}*/
+
+}

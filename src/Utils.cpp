@@ -21,8 +21,8 @@ pair<vector<vector<int>>,int> fileToVect(string nameFile){
 	ifstream infile(nameFile);
 	bool nextClause = true;
 	if(!infile.is_open()){
-		cout << "Impossible d'ouvrir le fichier";
-		return {};
+		throw "Impossible d'ouvrir le fichier";
+		
 	}else{
 		cout << "Entre dans le else" << endl;
 		int nombreVariable, nbClauses;
@@ -47,11 +47,11 @@ pair<vector<vector<int>>,int> fileToVect(string nameFile){
 		for(int clause = 0 ; clause < nbClauses; clause++){
  			string buff;
 			getline(infile, buff);
-			cout << buff;
+			//cout << buff;
 			formule.push_back(split(buff));
+			formule[clause].pop_back();
 		}
-		cout << "Clause 0 : " <<formule[0][0] << " " << formule[0][1] << " " << endl;
-		cout << "Clause 1 : " << formule[1][0] << " " << formule[1][1] << " " << formule[1][1] << endl;
+	afficheFormule(formule);
 		return make_pair(formule, nombreVariable);
 	}
 
@@ -88,7 +88,7 @@ void afficheFormule (vector<vector<int>> formule) {
 			else
 				ss << ", " << x;
 		}
-		ss << "]" << endl;
+		ss << "]" ;//<< endl;
 	}
 	ss << "]"<< endl;
 	cout << ss.str();

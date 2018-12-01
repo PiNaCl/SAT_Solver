@@ -1,0 +1,540 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"solu",
+				"solution_value"
+			],
+			[
+				"loc",
+				"local_dep"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"mach",
+				"machines"
+			],
+			[
+				"machin",
+				"machine_job"
+			],
+			[
+				"dema",
+				"demands"
+			],
+			[
+				"max",
+				"max_free_utilization_ratio"
+			],
+			[
+				"nu",
+				"num_arcs"
+			],
+			[
+				"pena",
+				"penalty_cost"
+			],
+			[
+				"num",
+				"num_arcs"
+			],
+			[
+				"back",
+				"backbone"
+			],
+			[
+				"pri",
+				"prix"
+			],
+			[
+				"dem",
+				"demand"
+			],
+			[
+				"to",
+				"to_string"
+			],
+			[
+				"ma",
+				"MakeRowConstraint"
+			],
+			[
+				"dist",
+				"distances"
+			],
+			[
+				"node",
+				"node2tmp"
+			],
+			[
+				"Num",
+				"NumNode"
+			],
+			[
+				"colo",
+				"colored"
+			],
+			[
+				"con",
+				"constraints"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"edg",
+				"edge"
+			],
+			[
+				"en",
+				"enfants"
+			],
+			[
+				"ed",
+				"edge"
+			],
+			[
+				"sorted",
+				"sortedEdges"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"e",
+				"edge1"
+			],
+			[
+				"wi",
+				"total_weight"
+			],
+			[
+				"wei",
+				"weight"
+			],
+			[
+				"edge",
+				"edge_compare"
+			],
+			[
+				"sort",
+				"sortedEdges"
+			],
+			[
+				"so",
+				"sortedEdges"
+			],
+			[
+				"we",
+				"weight"
+			],
+			[
+				"act",
+				"actual_clause"
+			],
+			[
+				"actual",
+				"actual_literal"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"whe",
+				"weight"
+			],
+			[
+				"wh",
+				"weight_left"
+			],
+			[
+				"n",
+				"object_number"
+			],
+			[
+				"cut",
+				"cut_index"
+			],
+			[
+				"cutin",
+				"cut_index"
+			],
+			[
+				"indi",
+				"cut_indices"
+			],
+			[
+				"in",
+				"indices"
+			],
+			[
+				"best",
+				"best"
+			],
+			[
+				"best_",
+				"best_ratio"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"be",
+				"best_ratio"
+			],
+			[
+				"cu",
+				"cuts"
+			],
+			[
+				"parce",
+				"parcel_indexes"
+			],
+			[
+				"la",
+				"last_best_index"
+			],
+			[
+				"pr",
+				"progress"
+			],
+			[
+				"sele",
+				"selected_indexes"
+			],
+			[
+				"Ma",
+				"MaxGainAux"
+			],
+			[
+				"N",
+				"NumNodes"
+			],
+			[
+				"no",
+				"noCycle"
+			],
+			[
+				"h",
+				"heights"
+			],
+			[
+				"hei",
+				"heights"
+			],
+			[
+				"io",
+				"iostream\tstandard header"
+			],
+			[
+				"Heig",
+				"heights"
+			],
+			[
+				"chil",
+				"child_of_node"
+			],
+			[
+				"actu",
+				"actual_distance"
+			],
+			[
+				"exp",
+				"toExplore"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/naptinap/Desktop/Fac/M1/SAT_solver_project"
+	],
+	"file_history":
+	[
+		"/home/naptinap/Desktop/Fac/M1/unix/26112018/exercice3.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/test-fichier",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo4.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo6.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/26112018/exercice4.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo5.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/ex7 (1).sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo2.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo8.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo7.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo6 (1).sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo5 (1).sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo3.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/boucle.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/ex7.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/dorian.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/TP moodle/Scripts_Bash/exo8 (1).sh",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td9/job.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td9/job1.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td9/job2.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td9/job3.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td9/job3.test.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td9/job4.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/Makefile",
+		"/home/naptinap/Desktop/Fac/M1/SAT_solver_project/src/Make",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/job.test.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/job.h",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/flow2.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/flow1.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/flow2.test.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/flow2.h",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/job.cc",
+		"/home/naptinap/Desktop/partageScript.sh",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/test(1).sh",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/examples/cpp/integer_programming.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/job.cc.h\"",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td8/flow.cc",
+		"/home/naptinap/Desktop/Fac/M1/unix/exo5_TD3_Unix.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/exercice2TD2.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/exercice3TD3",
+		"/home/naptinap/Desktop/Fac/M1/unix/exo5.sh",
+		"/home/naptinap/Desktop/Fac/M1/unix/exo7TD3.sh",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/examples/cpp/linear_programming.cc",
+		"/home/naptinap/Desktop/Fac/M1/unix/options",
+		"/home/naptinap/Desktop/Fac/M1/unix/testa",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td7/EXO2",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/examples/cpp/linear_assignment_api.cc",
+		"/tmp/mozilla_naptinap0/flow.cc",
+		"/home/naptinap/bin/or-tools_Ubuntu-17.10-64bit_v6.7.4981/td7/menu.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/diam1.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/ugraph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/graph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/bfs.1.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/bfs.1.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/diam1.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/diam2.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD6/fas.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/ugraph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/graph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/graph.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/cut.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/color.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/prim.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/color.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/prim.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/color.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/prim.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/toposort.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/toposort.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/parcel2.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/sac2.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/sac2.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/SAT_solver_project/backtracking.cc",
+		"/home/naptinap/Desktop/Fac/M1/SAT_solver_project/readCNF.h",
+		"/home/naptinap/Desktop/Fac/M1/SAT_solver_project/backtracking.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/sac2.h",
+		"/home/naptinap/Desktop/Fac/M1/SAT_solver_project/readCNF.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/main_utils.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/sac1.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/sac1.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD5/sac1.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/parcel.txt",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/cut.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/parcel.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD1/graph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/parcel.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/cut.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD1/corrigé/graph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD1/corrigé/graph.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD1/corrigé/ugraph.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD1/corrigé/ugraph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/sac.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD4/main_utils.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/bfs.1.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/graph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.4.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.1.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.1.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.2.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.4.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.2.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.3.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.3.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/bfs.3.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.3.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/tree.2.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD3/TRI TOPOLOGIQUE",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/Strongly connected component",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/bfs.2.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/vgraph.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/vgraph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/dijkstra.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/dijkstra.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/graph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/ugraph.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/ugraph (copy).cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/bfs.1.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/bfs.2.h",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/bfs.2.test.cc",
+		"/home/naptinap/Desktop/Fac/M1/opti_algo/TD2/ugraph.h"
+	],
+	"find":
+	{
+		"height": 91.0
+	},
+	"find_in_files":
+	{
+		"height": 265.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"local_dep",
+			"flow_on_arc"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"global_dep",
+			"machine_job"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 91.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Makefile.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
