@@ -10,15 +10,17 @@
 
 using namespace std;
 
-Solver::Solver(vector<vector<int>> formule, int nbVariable) {
+Solver::Solver(vector<vector<int>> formule, int nbVariable)
+{
 	this->formule = formule;
 	this->nbVariable = nbVariable;
-	sat= false;
+	sat = false;
 	this->model = vector<int>();
 	this->look_var = vector<bool>(nbVariable, false);
 }
 
-Solver::~Solver() {
+Solver::~Solver()
+{
 }
 
 /*
@@ -51,25 +53,34 @@ Solver::~Solver() {
 // 	cout << " ####fin de simplify###";
 // 	return formule;
 //}
-vector<vector<int>> Solver::simplify(vector<vector<int>> formule, int value) {
-	cout << "############   entrée dans Simplify ########" << endl << "formule avant simplification "<<endl;
+vector<vector<int>> Solver::simplify(vector<vector<int>> formule, int value)
+{
+	cout << "############   entrée dans Simplify ########" << endl
+		 << "formule avant simplification " << endl;
 	afficheFormule(formule);
 	vector<vector<int>>::iterator clause_it = formule.begin();
-	while (clause_it != formule.end()) {
+	while (clause_it != formule.end())
+	{
 		vector<int>::iterator lit_it = clause_it->begin();
-		while (lit_it != clause_it->end()) {
-			if (value == *lit_it) {
+		while (lit_it != clause_it->end())
+		{
+			if (value == *lit_it)
+			{
 				clause_it = formule.erase(clause_it);
 				break;
-			} else if (*lit_it == -value) {
-				int size = clause_it -> size();
+			}
+			else if (*lit_it == -value)
+			{
+				int size = clause_it->size();
 				clause_it->erase(lit_it);
-			//	clause_it.prev();
-				clause_it->resize(size-1);
+				//	clause_it.prev();
+				clause_it->resize(size - 1);
 				clause_it->shrink_to_fit();
-				cout << "Valeur literal_it"<< *++lit_it << endl;
+				cout << "Valeur literal_it" << *++lit_it << endl;
 				++clause_it;
-			}else{
+			}
+			else
+			{
 				++clause_it;
 				++lit_it;
 				if (clause_it == formule.end())
@@ -83,47 +94,57 @@ vector<vector<int>> Solver::simplify(vector<vector<int>> formule, int value) {
 	return formule;
 }
 
-vector<int> Solver::backtracking(vector<vector<int>> formule, int var){
-	cout << "actual_model [";
-	for (auto i : model) {
+vector<int> Solver::backtracking(vector<vector<int>> formule, int var)
+{
+	// cout << "actual_model [";
+	for (auto i : model)
+	{
 		cout << i << ", ";
 	}
-	cout << "]" << endl <<"--------------entrée dans le backtracking ---------------"<<endl;
+	// cout << "]" << endl <<"--------------entrée dans le backtracking ---------------"<<endl;
 
 	int i = 0;
-	cout << "nombres de clause = " << formule.size()<<endl;
-	for (vector<int> clause : formule) {
-		if(clause.empty()) {
+	// cout << "nombres de clause = " << formule.size()<<endl;
+	for (vector<int> clause : formule)
+	{
+		if (clause.empty())
+		{
 			return {};
 		}
 	}
-	if(formule.empty()){
-		cout << "la formule est vide on retourne "<< var <<endl;
+	if (formule.empty())
+	{
+		cout << "la formule est vide on retourne " << var << endl;
 		return {var};
 	}
 	int next_var = nextVar(formule, var);
-	cout << "apres nextVar : " << next_var << endl;
+	// cout << "apres nextVar : " << next_var << endl;
 	vector<int> back_simpl = backtracking(simplify(formule, next_var), next_var);
-	if(back_simpl.empty())
+	if (back_simpl.empty())
 		return backtracking(simplify(formule, -next_var), -next_var);
-	else {
+	else
+	{
 		back_simpl.push_back(var);
 		return back_simpl;
 	}
-
 }
 
-int Solver::nextVar(const vector<vector<int>> &formule, int var){
-	cout << "~~~~~~~~~Choix de nouvelle variable~~~~~~~~~~~" <<endl;
+int Solver::nextVar(const vector<vector<int>> &formule, int var)
+{
+	cout << "~~~~~~~~~Choix de nouvelle variable~~~~~~~~~~~" << endl;
 	var = abs(var);
-	this->look_var[var]=true;
-	if(formule.empty()){
+	this->look_var[var] = true;
+	if (formule.empty())
+	{
 		cout << "Formule vide, on retourne : " << var;
 		return var;
 	}
-	for(int clause_it = 0 ; clause_it < formule.size(); clause_it++){
-		for(int literal_it = 0 ; literal_it < formule[clause_it].size() ; literal_it++){
-			if(!look_var[literal_it]){
+	for (int clause_it = 0; clause_it < formule.size(); clause_it++)
+	{
+		for (int literal_it = 0; literal_it < formule[clause_it].size(); literal_it++)
+		{
+			if (!look_var[literal_it])
+			{
 				return formule[clause_it][literal_it];
 			}
 		}
@@ -138,31 +159,36 @@ int Solver::nextVar(const vector<vector<int>> &formule, int var){
 // 		cout << "M";
 // }
 
-
-void Solver::solve () {
-	model = backtracking( formule,1 );
+void Solver::solve()
+{
+	model = backtracking(formule, 1);
 }
 
 /**
  * Getter de la Classe
  */
 
-const vector<vector<int> >& Solver::getFormule() const {
+const vector<vector<int>> &Solver::getFormule() const
+{
 	return formule;
 }
 
-const vector<bool>& Solver::getLookVar() const {
+const vector<bool> &Solver::getLookVar() const
+{
 	return look_var;
 }
 
-const vector<int>& Solver::getModel() const {
+const vector<int> &Solver::getModel() const
+{
 	return model;
 }
 
-int Solver::getNbVariable() const {
+int Solver::getNbVariable() const
+{
 	return nbVariable;
 }
 
-bool Solver::isSat() const {
+bool Solver::isSat() const
+{
 	return sat;
 }
