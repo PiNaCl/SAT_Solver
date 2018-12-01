@@ -1,2 +1,4 @@
-sat
 .DS_Store
+
+**/sat
+**/*.o
