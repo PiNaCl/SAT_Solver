@@ -8,39 +8,39 @@
 #include "Utils.h"
 
 int main(int argc, char** argv) {
-
-	for (int i =0; i < argc; i++) {
-		cout << argv[i] <<endl;
-	}
-	cout << "Entree";
 	string path;
 	if(argc >= 2) {
-		cout << argv[0]; 
 		path = argv[1];
-		cout << &path;
-		cout << "fichier : " << path;
+	} else {
+		cout << "usage : sat $pathToDimacFile$, one argument required."<<endl;
+		return -1;
 	}
 	try  {
+		//Read the dimac file
 		pair<vector<vector<int>>, int> couple = fileToVect(path);
-	
-	vector<vector<int>> phi = couple.first;
-	int nb_var = couple.second;
-	Solver solver = Solver(phi, nb_var);
-	solver.solve();
-	vector<int> solution = solver.getModel();
-	if (solution.empty()) {
-		cout << "INSATISFAISABLE" << endl;
-	} else {
-		cout << "SATISFIABLE" << endl << "solution size = " << solution.size();
-		for (int i=0; i<solution.size(); i++){
-			if(solution[i]!=0)
-				cout << (i+1) * solution[i] << " ";
-			else
-				cout << -1 * (i+1) << " " ;
-		}
-	}
-} catch (exception &e) {
-	cerr << e.what();
-}
+		vector<vector<int>> phi = couple.first;
+		int nb_var = couple.second;
 
+		// Create the solver with formula and the number of variable for solving
+		Solver solver = Solver(phi, nb_var);
+
+		//Run the solver
+		solver.solve();
+
+		//Get the solution
+		vector<int> solution = solver.getModel();
+
+		//print it
+		if (solution.empty() && !solver.isSat()) {
+			cout << "UNSATISFIABLE" << endl;
+		} else {
+			cout << "SATISFIABLE" << endl << "solution size = " << solution.size()<<endl;
+			for (int i=0; i<solution.size(); i++){
+				// If there is no value assigned to solution[i], then the formula is satisfied without them
+				solution[i] ==0 ? cout << -i-1 << " " : cout << solution[i] << " ";
+			}
+		}
+	} catch (exception &e) {
+		cerr << e.what();
+	}
 }

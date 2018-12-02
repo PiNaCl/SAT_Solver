@@ -16,15 +16,14 @@ bool test_empty_clause(const vector<vector<int>>& formula) {
 	return false;
 }
 
+//Read a dimac file, and create a double that contain  the forumla
 pair<vector<vector<int>>,int> fileToVect(string nameFile){
-	cout << "Entre dans fileToVect" << endl;
 	ifstream infile(nameFile);
 	bool nextClause = true;
 	if(!infile.is_open()){
 		throw "Impossible d'ouvrir le fichier";
 		
 	}else{
-		cout << "Entre dans le else" << endl;
 		int nombreVariable, nbClauses;
 		vector<vector<int>> formule;
 		bool com_it = false;
@@ -39,19 +38,16 @@ pair<vector<vector<int>>,int> fileToVect(string nameFile){
 				copy( istream_iterator<string>(streamLine), istream_iterator<string>(), back_inserter(lineList ));
 				nombreVariable = stoi(lineList[2]);
 				nbClauses = stoi(lineList[3]);
-				cout << "nb var : " << nombreVariable << endl;
-				cout << "nb clause : " << nbClauses << endl;
 				com_it=true;
 			}
 		}
 		for(int clause = 0 ; clause < nbClauses; clause++){
  			string buff;
 			getline(infile, buff);
-			//cout << buff;
 			formule.push_back(split(buff));
 			formule[clause].pop_back();
 		}
-	afficheFormule(formule);
+	//afficheFormule(formule);
 		return make_pair(formule, nombreVariable);
 	}
 
@@ -69,10 +65,15 @@ vector<int> split(string &line){
 	for(int value = 0 ; value < lineList.size()-1; value++){
 		clause[value]= stoi(lineList[value]);
 	}
-	cout<<endl;
 	return clause;
 }
 
+
+/**
+*Function that prints a formula, would have been the formula.toString() method if we created the formula class
+* used for debug
+* param : the vector<vector<int>> that need to be printed
+**/
 
 void afficheFormule (vector<vector<int>> formule) {
 	stringstream ss;
